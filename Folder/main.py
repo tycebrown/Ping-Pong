@@ -13,7 +13,6 @@ password_character6 = random.choice(numbers)
 password_character7 = random.choice(special_characters)
 password_character8 = random.choice(special_characters)
 
-password = password_character7,password_character5,password_character3,password_character8,password_character6,password_character4,password_character2,password_character1
-
-for character in password:
-    print(character)
+password = [password_character7,password_character5,password_character3,password_character8,password_character6,password_character4,password_character2,password_character1]
+random.shuffle(password)
+print("".join(password))
